@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script>
+			var result = 0;
+			function reset(){
+				result = 0;
+				document.getElementById('result').value = 0;
+			}
+			function add(id){
+				var a = document.getElementById(id).value;
+				result += parseFloat(a);
+				document.getElementById('result').value = result;
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<input type="button" id="1" value="1" onclick="add(this.id)">  
+			<input type="button" id="2" value="2" onclick="add(this.id)">
+			<input type="button" id="3" value="3" onclick="add(this.id)">
+			<br/>
+			<input type="button" id="4" value="4" onclick="add(this.id)">  
+			<input type="button" id="5" value="5" onclick="add(this.id)">
+			<input type="button" id="6" value="6" onclick="add(this.id)">
+			<br/>
+			<input type="button" id="7" value="7" onclick="add(this.id)">  
+			<input type="button" id="8" value="8" onclick="add(this.id)">
+			<input type="button" id="9" value="9" onclick="add(this.id)">
+			<br/>
+			<input type="button" id="reset" value="RESET" onclick="reset();">
+			<br/>
+			RESULT <input id="result" type = "text"> 
+		</div>
+	</body>
+</html>
